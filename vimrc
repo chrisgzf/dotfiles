@@ -82,6 +82,7 @@ Plug 'scrooloose/syntastic'
 Plug 'vim-airline/vim-airline'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/goyo.vim'
+Plug 'tpope/vim-markdown'
 
 " Colour Schemes
 Plug 'altercation/vim-colors-solarized'
