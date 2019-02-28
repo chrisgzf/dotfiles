@@ -1,19 +1,3 @@
-" An example for a vimrc file.
-"
-" Maintainer:	Bram Moolenaar <Bram@vim.org>
-" Last change:	2017 Sep 20
-"
-" To use it, copy it to
-"     for Unix and OS/2:  ~/.vimrc
-"	      for Amiga:  s:.vimrc
-"  for MS-DOS and Win32:  $VIM\_vimrc
-"	    for OpenVMS:  sys$login:.vimrc
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
-
 " Get the defaults that most users want.
 source $VIMRUNTIME/defaults.vim
 
@@ -64,6 +48,12 @@ set viminfo+=n~/.vim/.viminfo
 
 " Basic settings
 set number
+
+" Indentation settings
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
 
 " Autoinstalling vim plug
 if empty(glob('~/.vim/autoload/plug.vim'))
