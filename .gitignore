@@ -1,4 +1,6 @@
-autoload
+.vim/autoload
 .git
-plugged
+.vim/.git
+.vim/plugged
 .viminfo
+.vim/.viminfo
