@@ -144,6 +144,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 # Chris's own additions
 export PATH="/home/chris/.gem/ruby/2.5.0/bin":$PATH
 export PATH="/root/.gem/ruby/2.5.0/bin":$PATH
+export PATH="/opt/anaconda/bin":$PATH
 export CFLAGS="-ggdb -std=c99 -Wall -Werror -lcrypt -lm"
 export CC="gcc"
 export SUBMIT50GIT="git@github.com:submit50/chrisgzf.git"
