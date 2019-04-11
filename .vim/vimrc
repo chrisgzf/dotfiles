@@ -103,3 +103,23 @@ syntax enable
 set background=dark
 colorscheme solarized8
 
+" Chris very unique Vim keybindings
+" PLS RETHINK HARD IF YOU WANT TO USE THIS
+" BECAUSE YOU MOST LIKELY DONT
+
+" Remaps asd to qwe, so that I free asd to be mapped hjk
+noremap q a
+noremap w s
+noremap e d
+" Remaps hjkl to asdf to do left handed browsing
+noremap a h
+noremap s j
+noremap d k
+noremap f l
+noremap h <Nop>
+noremap j <Nop>
+noremap k <Nop>
+noremap l <Nop>
+" Remaps Ctrl-C to Escape (it already sort of does this without the binding
+" but this ensures that InsertLeave is called)
+noremap <C-c> <Esc>
