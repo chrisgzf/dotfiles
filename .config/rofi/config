@@ -1,0 +1,13 @@
+rofi.width: 100
+rofi.lines: 3
+rofi.padding: 800
+rofi.eh: 2
+rofi.bw: 0
+rofi.separator-style: none
+rofi.hide-scrollbar: true
+rofi.color-normal: #d92f343f, #d9f3f4f5, #d92f343f, #d92f343f, #d99575cd
+rofi.color-window: #d92f343f, #d92f343f, #d92f343f
+rofi.font: SF Pro Display 20 
+
+
+! TODO: properly theme this damn tool
