@@ -170,19 +170,19 @@ client.urgent           $urgent-bg-color    $urgent-bg-color    $text-color     
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        font pango:SF Pro Display, Regular 13, Font Awesome 5 Free, Solid 13
-        status_command i3blocks -c ~/.config/i3/i3blocks.conf
-        colors {
-	        	background $bg-color
-                separator #757575
-                #                  border             background         text
-        		focused_workspace  $bg-color          $bg-color          $text-color
-        		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-                urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-        } 
-        position top
-}
+# bar {
+#         font pango:SF Pro Display, Regular 13, Font Awesome 5 Free, Solid 13
+#         status_command i3blocks -c ~/.config/i3/i3blocks.conf
+#         colors {
+# 	        	background $bg-color
+#                 separator #757575
+#                 #                  border             background         text
+#         		focused_workspace  $bg-color          $bg-color          $text-color
+#         		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+#                 urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+#         } 
+#         position top
+# }
 
 bindsym $mod+shift+x exec $lockscreen
 
@@ -198,11 +198,18 @@ bindsym $meta+F2 exec playerctl next
 
 # TODO: Do something to toggle screens with xrandr
 
+# i3-gaps settings
+for_window [class=".*"] border pixel 0
+gaps inner 20
+gaps outer 0
+smart_gaps on
+
 # Applications to autostart on startup
-exec spotify
-exec telegram-desktop
-exec compton # compton compositor
+exec --no-startup-id spotify
+exec --no-startup-id telegram-desktop
+exec --no-startup-id compton # compton compositor
 
 # Applications to autostart whenever i3 is restarted
-exec_always feh --bg-fill $HOME/Wallpapers/1.jpg
+exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/1.jpg
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
