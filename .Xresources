@@ -53,5 +53,9 @@ URxvt.urgentOnBell: true
 URxvt.depth: 24
 URxvt.iso14755: false
 
+!! Add URxvt copypaste to be the same as your normal terminal emulators
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+
 !! Rofi Settings
 rofi.font: xft:Roboto Mono 15
