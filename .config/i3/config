@@ -23,6 +23,9 @@ bindsym $mod+Shift+q kill
 # start rofi
 bindsym $mod+d exec rofi -show run 
 
+# focus doesn't follow mouse
+focus_follows_mouse no
+
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
@@ -82,7 +85,7 @@ set $ws4 "4"
 set $ws5 "5"
 set $ws6 "6"
 set $ws7 "7"
-set $ws8 "8"
+set $ws8 "8: "
 set $ws9 "9: "
 set $ws10 "10: "
 
@@ -112,6 +115,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # lock certain apps to certain workspaces
 assign [class="TelegramDesktop"] $ws9
+assign [class="Whatsie"] $ws8
 # assign [class="Spotify"] $ws10
 for_window [class="Spotify"] move to workspace $ws10
 
@@ -151,11 +155,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #2f343f
-set $inactive-bg-color   #2f343f
-set $text-color          #f3f4f5
-set $inactive-text-color #676E7D
-set $urgent-bg-color     #E53935
+set $bg-color                   #ffb52a
+set $inactive-bg-color          #4c2d00
+set $text-color                 #f3f4f5
+set $inactive-text-color        #676E7D
+set $urgent-bg-color            #E53935
 
 # window colors
 #                       border              background          text                    indicator
@@ -199,13 +203,14 @@ bindsym $meta+F2 exec playerctl next
 # TODO: Do something to toggle screens with xrandr
 
 # i3-gaps settings
-for_window [class=".*"] border pixel 0
+for_window [class=".*"] border pixel 3 
 gaps inner 20
 gaps outer 0
-smart_gaps on
+# smart_gaps on
 
 # Applications to autostart on startup
 exec --no-startup-id spotify
+exec --no-startup-id whatsie
 exec --no-startup-id telegram-desktop
 exec --no-startup-id compton # compton compositor
 
@@ -213,3 +218,10 @@ exec --no-startup-id compton # compton compositor
 exec_always --no-startup-id feh --bg-fill $HOME/Wallpapers/1.jpg
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Assign workspaces to certain monitors
+workspace $ws1 output primary
+workspace $ws2 output primary
+workspace $ws3 output primary
+workspace $ws8 output DVI-D-0
+workspace $ws9 output DVI-D-0
+workspace $ws10 output DVI-D-0

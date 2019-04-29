@@ -14,4 +14,5 @@ compinit
 # End of lines added by compinstall
 
 PROMPT="%n@%m %1~: "
-alias i3c="vim ./.config/i3/config"
+alias i3c="vim $HOME/.config/i3/config"
+alias plbc="vim $HOME/.config/polybar/config"
