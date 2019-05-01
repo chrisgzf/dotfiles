@@ -17,6 +17,9 @@ floating_modifier $mod
 # start a terminal
 bindsym $mod+Return exec urxvt
 
+# start webbrowser with mod + \
+bindsym $mod+backslash exec $BROWSER
+
 # kill focused window
 bindsym $mod+Shift+q kill
 
