@@ -15,4 +15,5 @@ compinit
 
 PROMPT="%n@%m %1~: "
 alias i3c="vim $HOME/.config/i3/config"
+alias vc="vim $HOME/.vim/vimrc"
 alias plbc="vim $HOME/.config/polybar/config"
