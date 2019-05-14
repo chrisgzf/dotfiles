@@ -102,4 +102,4 @@ alias i3c="vim $HOME/.config/i3/config"
 alias vc="vim $HOME/.vim/vimrc"
 alias plbc="vim $HOME/.config/polybar/config"
 alias zshrc="vim $HOME/.zshrc"
-
+alias cda="source /opt/anaconda/bin/activate base"
