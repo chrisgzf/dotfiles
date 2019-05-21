@@ -203,6 +203,10 @@ bindsym $meta+Escape exec playerctl play-pause
 bindsym $meta+F1 exec playerctl previous
 bindsym $meta+F2 exec playerctl next
 
+# PrintScreen Controls
+bindsym Print --release exec "scrot -s /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+bindsym Shift+Print exec "scrot /tmp/screenshot-$(date +%F_%T).png -e 'xclip -selection c -t image/png < $f'"
+
 # TODO: Do something to toggle screens with xrandr
 
 # i3-gaps settings
