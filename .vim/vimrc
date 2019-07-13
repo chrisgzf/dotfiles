@@ -53,6 +53,7 @@ set number
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
+set colorcolumn=72
 set expandtab
 
 " Autoinstalling vim plug
@@ -96,10 +97,10 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " Solarised Settings
-let g:solarized_termcolors=256
-" set t_Co=16
-" set termguicolors
+"let g:solarized_termcolors=256
+"set t_Co=16
+set termguicolors
 syntax enable
-set background=dark
-colorscheme solarized
+"set background=dark
+colorscheme solarized8
 
