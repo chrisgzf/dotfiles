@@ -15,7 +15,7 @@ set $lockscreen "i3lock --color 000000"
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvt
+bindsym $mod+Return exec alacritty
 
 # start webbrowser with mod + \
 bindsym $mod+backslash exec $BROWSER
@@ -118,7 +118,7 @@ bindsym $mod+Shift+0 move container to workspace $ws10
 
 # lock certain apps to certain workspaces
 assign [class="TelegramDesktop"] $ws9
-assign [class="Whatsie"] $ws8
+assign [class="whats-app-nativefier-d52542"] $ws8
 # assign [class="Spotify"] $ws10
 for_window [class="Spotify"] move to workspace $ws10
 
@@ -217,7 +217,7 @@ gaps outer 0
 
 # Applications to autostart on startup
 exec --no-startup-id spotify
-exec --no-startup-id whatsie
+exec --no-startup-id whatsapp-nativefier
 exec --no-startup-id telegram-desktop
 exec --no-startup-id compton # compton compositor
 
