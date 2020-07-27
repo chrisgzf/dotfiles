@@ -6,3 +6,13 @@
 [core]
 	editor = vim
 	excludesfile = /Users/chris/.gitignore
+[pull]
+	rebase = true
+[alias]
+	s = status
+	d = diff
+	co = checkout
+	br = branch
+	c = commit
+	a = add
+	aa = add --all
