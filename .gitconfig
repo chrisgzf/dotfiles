@@ -5,3 +5,4 @@
 	ui = auto
 [core]
 	editor = vim
+	excludesfile = /Users/chris/.gitignore
