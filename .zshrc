@@ -9,3 +9,6 @@ fi
 
 # fnm
 eval "$(fnm env --multi)"
+
+# run z
+. $(brew --prefix)/etc/profile.d/z.sh
