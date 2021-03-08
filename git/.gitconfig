@@ -1,0 +1,19 @@
+[user]
+  name = Christopher Goh
+  email = chrisgzf@gmail.com
+[github]  
+  user = chrisgzf
+[color]
+	ui = auto
+[core]
+	editor = nvim
+[pull]
+	rebase = true
+[alias]
+	s = status
+	d = diff
+	co = checkout
+	br = branch
+	c = commit
+	a = add
+	aa = add --all
