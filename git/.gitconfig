@@ -1,12 +1,11 @@
 [user]
-  name = Christopher Goh
-  email = chrisgzf@gmail.com
-[github]  
-  user = chrisgzf
+	name = Christopher Goh
+	email = chrisgzf@gmail.com
 [color]
 	ui = auto
 [core]
 	editor = nvim
+	excludesfile = ~/.global_gitignore
 [pull]
 	rebase = true
 [alias]
@@ -17,3 +16,5 @@
 	c = commit
 	a = add
 	aa = add --all
+[github]
+	user = chrisgzf
