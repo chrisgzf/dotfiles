@@ -19,6 +19,8 @@ alias psql="psql -U postgres"
 alias examrecord='ffmpeg -f avfoundation -r 1 -probesize 20M -threads 1 -i "1:none" -vcodec libx264 -b:v 128k -s hd720 /Users/chris/e0406358.mp4'
 alias dcr="docker-compose down && docker-compose build --no-cache && docker-compose up"
 alias f="cd ~/fluminus_cli && mix fluminus --download-to=$(realpath -e ~/school)"
+alias vim=nvim
+alias vimrc="nvim ~/.dotfiles/nvim/.config/nvim/init.vim"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
